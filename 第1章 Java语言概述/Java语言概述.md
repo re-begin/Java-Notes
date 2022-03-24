@@ -3,7 +3,7 @@
 ## 基础知识
 - JDK、JRE、JVM关系：  
     JDK = JRE + 开发工具集（例如Javac编译工具等）  
-    JRE = JVM + Java  
+    JRE = JVM + Java核心类库  
 
 - Java程序编写-编译-运行的过程
     1. 编写：写.Java文件
