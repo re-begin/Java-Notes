@@ -82,6 +82,8 @@ byte、short、char -> int -> long -> float -> double
     ```java
     float f = 1.2F;
     int i = (int)f;
+
+    s1 = "123"
     ```  
 
 ### 字符串类型：String
