@@ -142,3 +142,21 @@ label: for(int i = 1; i<=4; i++){
     }
 }
 ```
+```java
+/* 
+例题：输出100以内的所有质数
+*/
+class PrimeNumberTest{
+    public static void main(String[] args){
+        label: for(int i = 2; i <= 100; i++){
+            for(int j = 2; j <= Math.sqrt(i); j++){
+                if(i % j == 0){ 
+                    continue label;
+                }
+            }
+            // 能执行到此步骤的都是质数
+            System.out.println(i);
+        }
+    }
+}
+```
