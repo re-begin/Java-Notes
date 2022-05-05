@@ -72,7 +72,7 @@ default:
 ```
 ## 循环结构
 根据循环条件，重复性的执行某段代码 
-有`while`, `do...while`, `for`三种循环语句  
+有`for`, `while`, `do...while`三种循环语句  
 注：JDK1.5提供了`foreach`循环，方便的遍历集合、数组元素  
 循环结构的四个要素:  
 ① 初始化条件  
@@ -84,9 +84,23 @@ for(①; ②; ④){
     ③
 }
 
-// 实例，输出结果为：abcbcbc
+// 示例，输出结果为：abcbcbc
 int num = 1;
 for(System.out.print('a'); num <=3; System.out.print('c'),num++){
     System.out.print('b');
 }
+```
+```java
+① 
+while(②){
+    ③;
+    ④; // 切记不要忘记写迭代条件，否则易出现死循环
+}
+```
+```java
+① 
+do{
+    ③;
+    ④; 
+}while(②);
 ```
