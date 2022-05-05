@@ -104,3 +104,26 @@ do{
     ④; 
 }while(②);
 ```
+```java
+/* 
+例题：输出100以内的所有质数
+*/
+class PrimeNumberTest{
+    public static void main(String[] args){
+
+        boolean isFlag = true; // 标记i是否被j除尽，一旦除尽，修改为false
+        for(int i = 2; i <= 100; i++){
+            for(int j = 2; j <= Math.sqrt(i); j++){ // 优化：Math.sqrt(i)
+                if(i % j == 0){ 
+                    isFlag = false;
+                    break; // 优化：一旦被除尽就可以跳出循环了
+                }
+            }
+            if(isFlag){
+                System.out.println(i);
+            }
+            isFlag = true;
+        }
+    }
+}
+```
