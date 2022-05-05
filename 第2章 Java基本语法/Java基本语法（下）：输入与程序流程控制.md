@@ -127,3 +127,18 @@ class PrimeNumberTest{
     }
 }
 ```
+## 特殊关键字的使用
+1. `break`和`contiune`的使用
+break用于switch-case、循环结构中，continue仅用于循环结构  
+关键字后面不能有执行语句，因为该语句无法访问  
+2. 带标签的关键字，结束指定标识的一层循环结构
+```java
+label: for(int i = 1; i<=4; i++){
+    for(int j =1; j<=10; j++){
+        if(j % 4 == 0){
+            break label; 
+            // continue label;
+        }
+    }
+}
+```
